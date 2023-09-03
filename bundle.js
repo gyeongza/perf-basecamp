@@ -129,7 +129,7 @@ var GiphyFetch = /** @class */ (function () {
     return GiphyFetch;
 }());
 exports.GiphyFetch = GiphyFetch;
-exports.default = GiphyFetch;
+exports["default"] = GiphyFetch;
 //# sourceMappingURL=api.js.map
 
 /***/ }),
@@ -183,7 +183,7 @@ var FetchError = /** @class */ (function (_super) {
     }
     return FetchError;
 }(Error));
-exports.default = FetchError;
+exports["default"] = FetchError;
 //# sourceMappingURL=fetch-error.js.map
 
 /***/ }),
@@ -218,7 +218,7 @@ __exportStar(__webpack_require__(6100), exports);
 var paginator_1 = __webpack_require__(742);
 Object.defineProperty(exports, "gifPaginator", ({ enumerable: true, get: function () { return paginator_1.gifPaginator; } }));
 __exportStar(__webpack_require__(9581), exports);
-var version = __webpack_require__(8821)/* .version */ .i8;
+var version = (__webpack_require__(8821)/* .version */ .i8);
 // since we have multiple SDKs, we're defining a hieracrchy
 // Fetch API is lowest
 if (!((_a = js_util_1.getGiphySDKRequestHeaders()) === null || _a === void 0 ? void 0 : _a.get("X-GIPHY-SDK-NAME"))) {
@@ -544,7 +544,7 @@ function request(url, normalizer, noCache) {
     }
     return requestMap[url].request;
 }
-exports.default = request;
+exports["default"] = request;
 //# sourceMappingURL=request.js.map
 
 /***/ }),
@@ -1532,7 +1532,7 @@ function bestfit(renditions, width, height, scaleUpMaxPixels) {
     // find the closest area of the filtered renditions
     return closestArea(width, height, testRenditions);
 }
-exports.default = bestfit;
+exports["default"] = bestfit;
 //# sourceMappingURL=bestfit.js.map
 
 /***/ }),
@@ -1630,7 +1630,7 @@ var getClientRect = function (el) {
     };
     return __assign(__assign({}, result), { toJSON: function () { return JSON.stringify(result); } });
 };
-exports.default = getClientRect;
+exports["default"] = getClientRect;
 //# sourceMappingURL=get-client-rect-from-el.js.map
 
 /***/ }),
@@ -1682,7 +1682,7 @@ var getPingbackId = function () {
     }
     return pingbackId;
 };
-exports.default = getPingbackId;
+exports["default"] = getPingbackId;
 //# sourceMappingURL=get-pingback-id.js.map
 
 /***/ }),
@@ -2089,7 +2089,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 
 /*
  * Browser-compatible JavaScript MD5
@@ -2306,7 +2306,7 @@ function md5ii(a, b, c, d, x, s, t) {
 }
 
 var _default = md5;
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2319,12 +2319,12 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 const randomUUID = typeof crypto !== 'undefined' && crypto.randomUUID && crypto.randomUUID.bind(crypto);
 var _default = {
   randomUUID
 };
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2337,9 +2337,9 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 var _default = '00000000-0000-0000-0000-000000000000';
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2352,7 +2352,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _validate = _interopRequireDefault(__webpack_require__(7559));
 
@@ -2391,7 +2391,7 @@ function parse(uuid) {
 }
 
 var _default = parse;
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2404,9 +2404,9 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 var _default = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2419,7 +2419,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = rng;
+exports["default"] = rng;
 // Unique ID creation requires a high quality random # generator. In the browser we therefore
 // require the crypto API and do not support built-in fallback to lower quality random number
 // generators (like Math.random()).
@@ -2451,7 +2451,7 @@ function rng() {
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 
 // Adapted from Chris Veness' SHA1 code at
 // http://www.movable-type.co.uk/scripts/sha1.html
@@ -2549,7 +2549,7 @@ function sha1(bytes) {
 }
 
 var _default = sha1;
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2562,7 +2562,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 exports.unsafeStringify = unsafeStringify;
 
 var _validate = _interopRequireDefault(__webpack_require__(7559));
@@ -2600,7 +2600,7 @@ function stringify(arr, offset = 0) {
 }
 
 var _default = stringify;
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2613,7 +2613,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _rng = _interopRequireDefault(__webpack_require__(9871));
 
@@ -2714,7 +2714,7 @@ function v1(options, buf, offset) {
 }
 
 var _default = v1;
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2727,7 +2727,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _v = _interopRequireDefault(__webpack_require__(5174));
 
@@ -2737,7 +2737,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const v3 = (0, _v.default)('v3', 0x30, _md.default);
 var _default = v3;
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2751,7 +2751,7 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports.URL = exports.DNS = void 0;
-exports.default = v35;
+exports["default"] = v35;
 
 var _stringify = __webpack_require__(1489);
 
@@ -2837,7 +2837,7 @@ function v35(name, version, hashfunc) {
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _native = _interopRequireDefault(__webpack_require__(4592));
 
@@ -2874,7 +2874,7 @@ function v4(options, buf, offset) {
 }
 
 var _default = v4;
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2887,7 +2887,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _v = _interopRequireDefault(__webpack_require__(5174));
 
@@ -2897,7 +2897,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const v5 = (0, _v.default)('v5', 0x50, _sha.default);
 var _default = v5;
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2910,7 +2910,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _regex = _interopRequireDefault(__webpack_require__(8919));
 
@@ -2921,7 +2921,7 @@ function validate(uuid) {
 }
 
 var _default = validate;
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -2934,7 +2934,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports.default = void 0;
+exports["default"] = void 0;
 
 var _validate = _interopRequireDefault(__webpack_require__(7559));
 
@@ -2949,7 +2949,7 @@ function version(uuid) {
 }
 
 var _default = version;
-exports.default = _default;
+exports["default"] = _default;
 
 /***/ }),
 
@@ -3095,7 +3095,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3118,7 +3118,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  bo
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3142,7 +3142,7 @@ ___CSS_LOADER_EXPORT___.locals = {};
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3171,7 +3171,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3207,7 +3207,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3233,7 +3233,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3260,7 +3260,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3289,7 +3289,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3325,7 +3325,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3353,7 +3353,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3383,7 +3383,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3413,7 +3413,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3439,7 +3439,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -3469,7 +3469,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Z: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4015);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -5614,10 +5614,13 @@ module.exports = {"i8":"4.1.1"};
 /******/ 		var document = __webpack_require__.g.document;
 /******/ 		if (!scriptUrl && document) {
 /******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
+/******/ 				scriptUrl = document.currentScript.src;
 /******/ 			if (!scriptUrl) {
 /******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
 /******/ 			}
 /******/ 		}
 /******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
@@ -5625,6 +5628,11 @@ module.exports = {"i8":"4.1.1"};
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nc = undefined;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -7771,7 +7779,7 @@ var update = injectStylesIntoStyleTag_default()(FeatureItem_module/* default */.
 
 
 
-       /* harmony default export */ const FeatureItem_FeatureItem_module = (FeatureItem_module/* default */.Z && FeatureItem_module/* default.locals */.Z.locals ? FeatureItem_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const FeatureItem_FeatureItem_module = (FeatureItem_module/* default */.Z && FeatureItem_module/* default */.Z.locals ? FeatureItem_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/pages/Home/components/FeatureItem/FeatureItem.tsx
 
@@ -7842,7 +7850,7 @@ var CustomCursor_module_update = injectStylesIntoStyleTag_default()(CustomCursor
 
 
 
-       /* harmony default export */ const CustomCursor_CustomCursor_module = (CustomCursor_module/* default */.Z && CustomCursor_module/* default.locals */.Z.locals ? CustomCursor_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const CustomCursor_CustomCursor_module = (CustomCursor_module/* default */.Z && CustomCursor_module/* default */.Z.locals ? CustomCursor_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/pages/Home/components/CustomCursor/CustomCursor.tsx
 
@@ -7905,7 +7913,7 @@ var AnimatedPath_module_update = injectStylesIntoStyleTag_default()(AnimatedPath
 
 
 
-       /* harmony default export */ const AnimatedPath_AnimatedPath_module = (AnimatedPath_module/* default */.Z && AnimatedPath_module/* default.locals */.Z.locals ? AnimatedPath_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const AnimatedPath_AnimatedPath_module = (AnimatedPath_module/* default */.Z && AnimatedPath_module/* default */.Z.locals ? AnimatedPath_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/pages/Home/components/AnimatedPath/AnimatedPath.tsx
 
@@ -7963,7 +7971,7 @@ var Home_module_update = injectStylesIntoStyleTag_default()(Home_module/* defaul
 
 
 
-       /* harmony default export */ const Home_Home_module = (Home_module/* default */.Z && Home_module/* default.locals */.Z.locals ? Home_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const Home_Home_module = (Home_module/* default */.Z && Home_module/* default */.Z.locals ? Home_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/pages/Home/Home.tsx
 
@@ -10752,7 +10760,7 @@ var SearchBar_module_update = injectStylesIntoStyleTag_default()(SearchBar_modul
 
 
 
-       /* harmony default export */ const SearchBar_SearchBar_module = (SearchBar_module/* default */.Z && SearchBar_module/* default.locals */.Z.locals ? SearchBar_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const SearchBar_SearchBar_module = (SearchBar_module/* default */.Z && SearchBar_module/* default */.Z.locals ? SearchBar_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/pages/Search/components/SearchBar/SearchBar.tsx
 
@@ -10792,7 +10800,7 @@ var ResultTitle_module_update = injectStylesIntoStyleTag_default()(ResultTitle_m
 
 
 
-       /* harmony default export */ const ResultTitle_ResultTitle_module = (ResultTitle_module/* default */.Z && ResultTitle_module/* default.locals */.Z.locals ? ResultTitle_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const ResultTitle_ResultTitle_module = (ResultTitle_module/* default */.Z && ResultTitle_module/* default */.Z.locals ? ResultTitle_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/pages/Search/components/ResultTitle/ResultTitle.tsx
 
@@ -10839,7 +10847,7 @@ var GifItem_module_update = injectStylesIntoStyleTag_default()(GifItem_module/* 
 
 
 
-       /* harmony default export */ const GifItem_GifItem_module = (GifItem_module/* default */.Z && GifItem_module/* default.locals */.Z.locals ? GifItem_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const GifItem_GifItem_module = (GifItem_module/* default */.Z && GifItem_module/* default */.Z.locals ? GifItem_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/pages/Search/components/GifItem/GifItem.tsx
 
@@ -10878,7 +10886,7 @@ var SearchResult_module_update = injectStylesIntoStyleTag_default()(SearchResult
 
 
 
-       /* harmony default export */ const SearchResult_SearchResult_module = (SearchResult_module/* default */.Z && SearchResult_module/* default.locals */.Z.locals ? SearchResult_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const SearchResult_SearchResult_module = (SearchResult_module/* default */.Z && SearchResult_module/* default */.Z.locals ? SearchResult_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/pages/Search/components/SearchResult/SearchResult.tsx
 
@@ -10959,7 +10967,7 @@ var ArtistInfo_module_update = injectStylesIntoStyleTag_default()(ArtistInfo_mod
 
 
 
-       /* harmony default export */ const ArtistInfo_ArtistInfo_module = (ArtistInfo_module/* default */.Z && ArtistInfo_module/* default.locals */.Z.locals ? ArtistInfo_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const ArtistInfo_ArtistInfo_module = (ArtistInfo_module/* default */.Z && ArtistInfo_module/* default */.Z.locals ? ArtistInfo_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/pages/Search/components/ArtistInfo/ArtistInfo.tsx
 
@@ -11009,7 +11017,7 @@ var HelpPanel_module_update = injectStylesIntoStyleTag_default()(HelpPanel_modul
 
 
 
-       /* harmony default export */ const HelpPanel_HelpPanel_module = (HelpPanel_module/* default */.Z && HelpPanel_module/* default.locals */.Z.locals ? HelpPanel_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const HelpPanel_HelpPanel_module = (HelpPanel_module/* default */.Z && HelpPanel_module/* default */.Z.locals ? HelpPanel_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/pages/Search/components/HelpPanel/HelpPanel.tsx
 
@@ -11058,7 +11066,7 @@ var Search_module_update = injectStylesIntoStyleTag_default()(Search_module/* de
 
 
 
-       /* harmony default export */ const Search_Search_module = (Search_module/* default */.Z && Search_module/* default.locals */.Z.locals ? Search_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const Search_Search_module = (Search_module/* default */.Z && Search_module/* default */.Z.locals ? Search_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/pages/Search/Search.tsx
 
@@ -11108,7 +11116,7 @@ var NavBar_module_update = injectStylesIntoStyleTag_default()(NavBar_module/* de
 
 
 
-       /* harmony default export */ const NavBar_NavBar_module = (NavBar_module/* default */.Z && NavBar_module/* default.locals */.Z.locals ? NavBar_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const NavBar_NavBar_module = (NavBar_module/* default */.Z && NavBar_module/* default */.Z.locals ? NavBar_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/components/NavBar/NavBar.tsx
 
@@ -11148,7 +11156,7 @@ var Footer_module_update = injectStylesIntoStyleTag_default()(Footer_module/* de
 
 
 
-       /* harmony default export */ const Footer_Footer_module = (Footer_module/* default */.Z && Footer_module/* default.locals */.Z.locals ? Footer_module/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const Footer_Footer_module = (Footer_module/* default */.Z && Footer_module/* default */.Z.locals ? Footer_module/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/components/Footer/Footer.tsx
 
@@ -11187,7 +11195,7 @@ var App_update = injectStylesIntoStyleTag_default()(App/* default */.Z, App_opti
 
 
 
-       /* harmony default export */ const src_App = (App/* default */.Z && App/* default.locals */.Z.locals ? App/* default.locals */.Z.locals : undefined);
+       /* harmony default export */ const src_App = (App/* default */.Z && App/* default */.Z.locals ? App/* default */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/App.tsx
 
@@ -11198,7 +11206,7 @@ var App_update = injectStylesIntoStyleTag_default()(App/* default */.Z, App_opti
 
 
 const App_App = () => {
-    return ((0,jsx_runtime.jsxs)(BrowserRouter, { children: [(0,jsx_runtime.jsx)(NavBar_NavBar, {}), (0,jsx_runtime.jsxs)(Routes, { children: [(0,jsx_runtime.jsx)(Route, { path: "/", element: (0,jsx_runtime.jsx)(Home_Home, {}) }), (0,jsx_runtime.jsx)(Route, { path: "/search", element: (0,jsx_runtime.jsx)(Search_Search, {}) })] }), (0,jsx_runtime.jsx)(Footer_Footer, {})] }));
+    return ((0,jsx_runtime.jsxs)(BrowserRouter, Object.assign({ basename: '/perf-basecamp' }, { children: [(0,jsx_runtime.jsx)(NavBar_NavBar, {}), (0,jsx_runtime.jsxs)(Routes, { children: [(0,jsx_runtime.jsx)(Route, { path: "/", element: (0,jsx_runtime.jsx)(Home_Home, {}) }), (0,jsx_runtime.jsx)(Route, { path: "/search", element: (0,jsx_runtime.jsx)(Search_Search, {}) })] }), (0,jsx_runtime.jsx)(Footer_Footer, {})] })));
 };
 /* harmony default export */ const src_App_0 = (App_App);
 
